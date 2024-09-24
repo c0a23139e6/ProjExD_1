@@ -32,8 +32,9 @@ def main():
             dx = 2
         if key_list[pg.K_LEFT]:
             dx = -1
+        else:
+            dx = -1
         kk_rct.move_ip((dx,dy))
-        kk_rct.move_ip((-1,0))
         x = -(tmr%3200)
         screen.blit(bg_img, [x, 0])
         screen.blit(bg_img2,[x+1600,0])
